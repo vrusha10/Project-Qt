@@ -76,7 +76,7 @@ bool AssetMdbmanagerservice::getData(QMap<QString, QString>storedata)
                        queryAdd.bindValue(":Site",Site);
                        queryAdd.bindValue(":Condition",Condition);
                        queryAdd.bindValue(":Image",Image);
-                       queryAdd.bindValue("Owner:",Owner);
+                       queryAdd.bindValue(":Owner",Owner);
 
             if(queryAdd.exec())
             {
